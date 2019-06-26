@@ -1,0 +1,166 @@
+﻿一、学习内容总结
+1.表格（Table）
+a)创建一个3行5列的表格tr标签代表行，td标签代表列
+<table>
+	<tr>
+		<td>第一行第一列</td>
+		<td>第一行第二列</td>
+		<td>第一行第三列</td>
+		<td>第一行第四列</td>
+		<td>第一行第五列</td>
+	</tr>
+	<tr>
+		<td>第二行第一列</td>
+		<td>第二行第二列</td>
+		<td>第二行第三列</td>
+		<td>第二行第四列</td>
+		<td>第二行第五列</td>
+		</tr>
+	<tr>
+		<td>第三行第一列</td>
+		<td>第三行第二列</td>
+		<td>第三行第三列</td>
+		<td>第三行第四列</td>
+		<td>第三行第五列</td>
+	</tr>
+</table>
+b)合并列的表格(添加属性colspan)
+<table border="1" width="500" height="200">
+	<tr>
+		<td colspan="2"></td>
+		<td colspan="2"></td>
+		<td colspan="2"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td colspan="2"></td>
+		<td></td>
+	</tr>
+</table>
+c)合并行的表格(添加属性rowspan)
+<table border="2" width="600" height="300">
+	<tr>
+		<td rowspan="2"></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td rowspan="2"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td rowspan="2"></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+d)合并行和列的表格（合并过程都是先创建一个没合并之前的表格，再根据每行的列数进行合并，行合并的列算在所合并的第一行里）
+<table border="1" width="800" height="350">
+	<tr>
+		<td rowspan="2"></td>
+		<td></td>
+		<td></td>
+		<td colspan="3"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td rowspan="3"></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td colspan="2"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+e)表格其他属性
+<td align="center" valign="bottom">我是单元格内文字</td>
+align:水平方向位置   left right center
+valign:纵向方向位置  top middle bottom
+<table border="1" width="800" height="350" cellspacing="0" cellpadding="10">
+Cellspacing:单元格之间的间隙
+Cellpadding：单元格内的内填充值
+
+2.Form：表单，提交数据。数据的载体
+1)<form action="dologin.jsp" method="get">
+2)action:提交数据处理地址
+3)method:发送数据方式   get   post（相对get安全点）
+
+3.div:图层，控件容器
+<div style="width: 300px;height:120px;background-color: #CCC;">
+			<p>宋老师真有趣！</p>
+</div>
+4.行标签:不能独立占一行，把一行充满后，自动换行。（img...）
+1)img:图片
+<img src="img/logo.png" width="300" height="50" alt="此图片不存在，提示文字" title="鼠标悬停在上面提示文字"/>
+其中各属性表示含义：
+src:图片路径，不可缺
+width:图片宽度
+height:图片高度
+alt: 此图片不存在时的提示文字
+title: 鼠标悬停在上面时的提示文字
+
+推荐使用网络图片的扩展名 .jpg  .png  .gif
+
+. bmp  位图 无压缩 不适合网络使用
+.jpg  压缩图片  支持千万种颜色 
+.png 压缩图片  支持千万种颜色  支持透明背景
+.gif  压缩图片  支持256种颜色  支持透明背景  支持动画
+
+5.路径
+图片路径：分为相对路径和绝对路径
+相对路径：向下 按目录层次关系写
+          向上 向上一级../   向上二级../../   向上三级../../../
+绝对路径：从根目录到目标目录的路径
+二、学习心得
+	今天又是充实的一天，学习了快标签Table,div和行标签img的相关知识，了解到登录界面的实现标签Form的用途和使用方法，感觉自己以后看见登录界面都会想起来这个知识点。虽然学的很累，但是很快乐，不断充实自己的感觉真的很美妙，比起学习枯燥的学习，实践学习非常有趣，期待明天的学习，over。
+
+
+
