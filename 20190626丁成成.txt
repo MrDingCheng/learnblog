@@ -1,0 +1,151 @@
+一、学习知识总结
+1.伪类选择器：元素的某种状态
+a:link{
+	color: red;
+}
+a:hover{
+	color: green;
+}
+a:active{
+	color: blueviolet;
+}
+a:visited{
+	color: #FFA500;
+}
+其中
+:link  未被访问状态
+: hover 鼠标悬停状态
+:acitve  激活状态
+: visited 访问过后状态
+:focus 获得焦点的状态
+2.通用选择器:设置具有通用性
+*{
+属性:属性值;
+属性:属性值;
+属性:属性值;
+……
+}
+3.后代选择器
+div span{
+	color: #FF0000;
+	font-size: 20px;
+}
+.mydiv .myps{
+	color: orange;
+	font-size: 30px;
+}
+示例代码：
+<style type="text/css">
+			div span{
+				color: #FF0000;
+				font-size: 20px;
+			}
+</style>
+<div>
+	<ul>
+		<li>列表项</li>
+		<li>列表项</li>
+		<li>列表项</li>
+		<li><span>列表项</span></li>
+	</ul>
+	<p>云创动力做事很<span>认真</span>！</p>
+	<span>云创动力人才服务</span>
+</div>
+<span>云创动力打造IT特种兵</span>
+4.子选择器
+div>span{
+	color: #FF0000;
+	font-size: 20px;
+}
+.mydiv>.myps{
+		color: orange;
+		font-size: 30px;
+}
+示例代码：
+<style type="text/css">
+	div>span{
+		color: #FF0000;
+		font-size: 20px;
+	}
+</style>
+<div>
+	<ul>
+		<li>列表项</li>
+		<li>列表项</li>
+		<li>列表项</li>
+		<li><span>列表项</span></li>
+	</ul>
+	<p>云创动力做事很<span>认真</span>！</p>
+	<span>云创动力人才服务</span>
+</div>
+<span>云创动力打造IT特种兵</span>
+5.组合选择器
+div,.myps,#myspan,span{
+	color: red;
+	font-size: 40px;
+}
+6.样式属性
+a)文字属性
+font-size:15px;    字体大小
+color:#FF0000;    字体颜色
+font-weight:700;   100—900   bold   bolder   加粗
+font-family: "宋体";   字体
+text-decoration: underline;   文字修饰  underline下划线 overline 上划线 none 没有修饰  line-through  删除线
+text-align: center;  文字方向  center居中  left 左边  right 右边
+letter-spacing: 2px;  文字间距
+line-height:行高
+text-indent:首行字的缩进
+text-shadow: 3px 4px 2px #CCC;   投影效果
+           3px 向X轴偏移值
+           4px 向Y轴偏移值
+           2px 乳化值
+		   #CCC  投影颜色
+b)盒子模型
+           
+盒子模型具有的四个属性：
+       content:   width和height
+       border:  边框
+       padding:内填充值(内边界)
+       margin:外边界
+       元素实际宽度=width + padding+border+margin
+       元素实际高度=height+padding+border+margin 
+盒子模型三个属性可以分四个方向去设置
+/*border 四个方向*/
+				border-top: 15px groove #8A2BE2;
+				border-right:10px double orange;
+				border-bottom: 2px dashed #FF0000;
+				border-left: 20px dotted black;
+				
+				/*padding 四个方向*/
+				padding-top: 10px;
+				padding-right: 15px;
+				padding-bottom: 20px;
+				padding-left: 25px;
+				
+				/*padding 设置2个值   上下  左右*/
+				padding: 25px 35px;
+				
+				/*padding 设置四个值  上右下左  顺时针*/
+				padding: 5px 10px 15px 20px;
+				
+				/*margin 四个方向*/
+				margin: 60px;   /*四个方向一个值*/
+				margin-top:20px;
+				margin-right: 30px;
+				margin-bottom: 40px;
+				margin-left: 50px;
+				
+				/*margin 设置四个值  上右下左  顺时针*/
+				margin: 20px 30px 40px 50px;
+				
+				/*margin 设置2个值   上下  左右**/
+				/*流式布局*/
+				margin: 50px 60px;
+				/*水平居中*/
+				margin: 0px auto;
+c)float:浮动,可以让块元素呈现行级元素的特征，并且会保持块元素的高和宽。原理：脱离文档流。
+二、学习心得总结
+	今天学习的内容比较多，从文字样式到盒子模型的布局，让我在做今天作业时头皮发麻，昨晚百度看见九宫格，脑子已经一片空白，明天早上一定要把今天的知识复习一遍，防止自己忘记，虽然很头疼作业，但是这种学习状态很让我亢奋，学习到了很多东西，相信自己经历这十天，一定可以独当一面。宋老师幽默生动的讲课令我记忆更快，精神更集中，感谢宋老师的淳淳教诲。
+
+
+
