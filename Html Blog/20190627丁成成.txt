@@ -1,0 +1,89 @@
+一、学习内容总结
+1.修饰背景属性
+background-color：背景颜色
+background-image: url(img/back.jpg);	背景图片(覆盖背景颜色)
+background-repeat: no-repeat;	背景重复方向  repeat  repeat-x  repeat-y
+background-position: left center;	背景位置的方位(水平靠左，垂直居中)
+background-position: -183px -66px; 	背景位置用像素控制，特点精准。
+background-size: 100% 100%; 	背景图片的大小
+background-size: cover;		保证把背景铺满，图片等比缩放
+background-attachment: fixed;	固定背景图片
+2.列表属性
+list-style
+list-style:none; 	没有点的呈现
+list-style: disc; 	呈现圆点
+list-style: circle; 	空心圆
+list-style: square;	正方块
+3.块元素属性
+width:200px; 宽度
+height:100px; 高度
+4.display的属性
+display:inline   		行级元素
+display:inline-block  	呈现行级元素排版，保持块元素特征（宽、高）
+display:none   		 元素不显示,不占位
+display:block    		块级元素
+visibility: hidden;  		元素不显示，占位
+5.透明度
+/*属性值 [0-1] 0：完全透明  1：不透明*/
+opacity: 0.8;
+/*用rgba模式：可以达到底色透明，文字不透明*/
+background-color: rgba(125,100,80,0.3);
+6.CSS3效果
+border-radius:10px; border半径
+box-shadow:投影
+动画
+.gooddiv{
+		width: 280px;
+		height: 270px;
+		background-color: #3385FF;
+		text-align: center;
+		padding-top: 10px;
+		cursor: pointer;
+		/*注意一定要写*/
+		transition: all 0.5s;
+}
+.gooddiv:hover{
+		/*css3*/
+		/*X轴  Y轴 平移 */
+		/*transform: translate(5px,5px);*/
+		/*旋转  deg度数单位*/
+		/*transform: rotateZ(180deg);*/
+		/*放大*/
+		/*transform: scale(1.2);*/
+		/*一边放大，一边旋转*/
+		transform: rotate(360deg) scale(1.5);
+}
+7.Float和display:inline-block的区别:
+a)Float脱离文档流，悬浮到页面上，文字会一环绕显示。
+b)display:inline-block，没有脱离文档流，占行内位置。
+8.鼠标效果
+cursor: pointer;鼠标效果 手型
+cursor: url(img/menghuan.ico),auto; 鼠标效果 图片样子
+9.其他属性：
+Overflow:visible   	 显示
+        	hidden    	隐藏
+      	atuo      	自动
+       	scroll      	滑动 
+10.postion:位置属性
+a）absolute  生成绝对定位的元素，相对于static定位以外的第一个父元素进行定位。元素的位置通过"left", "top", "right" 以及 "bottom" 属性进行规定。absolute  脱离文档流。
+b)fixed   生成绝对定位的元素，相对于浏览器窗口进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。fixed  脱离文档流。
+c)relative  生成相对定位的元素，相对于其正常位置进行定位。因此，"left:20" 会向元素的LEFT 位置添加 20 像素。它没有脱离文档流，相对原来文档流位置做相对的偏移。
+d)static  默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者z-index 声明）。
+e)inherit 规定应该从父元素继承 position 属性的值。
+f)首先，我们这里用的是标准盒子模型来讲，所以大家在理的时候必需把它看成一个盒子或者一个框。我们先来学习第一个默认参数static。
+g)static：静态定位是position的默认值，元素框正常生成，也就是没有定位时的正常显示。
+11.H5智能标签
+a)音频：<audio src="file/陈奕迅 - 红玫瑰 (《白玫瑰》国语版).mp3" controls="controls"></audio>
+b)视频：<video src="video/2.mp4" controls="controls" width="300" autoplay="autoplay" muted="muted" poster="video/2.jpg"></video>
+12.滚动
+  <marquee direction="up" scrollamount="3" width="300" height="300" onmouseover="stop()" onmouseout="start()">
+	    	balabala 
+	    	<img src="img/banner_2.png" />
+	    	<img src="img/banner_3.png" />
+</marquee>
+二、学习心得总结
+今天讲的CSS样式属性，都是零散的属性，不太能联系记忆，比较容易忘记，自己之后一定要多打多练，死记是不可能的，只有多多使用它，才能记住他，其实很多属性与都是它的英语单词，学习中同时也可以补充自己英语词汇量，为以后进公司阅读英文文档有所帮助，我对于计算机非常喜爱，感谢宋老师带我畅游前端的世界，俗话说师傅领进门，修行靠个人。再接再厉，加油！
+
+
+
+
